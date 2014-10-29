@@ -9,6 +9,8 @@ RUN apt-get -y build-dep python-psycopg2
 
 RUN apt-get -y install python-psycopg2
 
+RUN pip install astropy
+
 # Obtaining the FITS file
 RUN curl http://lambda.gsfc.nasa.gov/data/map/dr4/ancillary/masks/wmap_temperature_analysis_mask_r9_7yr_v4.fits -o example.fits
 
